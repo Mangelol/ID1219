@@ -204,7 +204,7 @@ const budget_years = (director_mail, callback) => {
 
 const profile = (examiner_mail, callback) => {
 	db.get_tutoring_hours(examiner_mail, (hours) => {
-		(hours.rowCount == 0); {
+		if(hours.rowCount == 0){
 			callback("An error has occurred.");
 			return;
 		}
