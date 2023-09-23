@@ -112,6 +112,8 @@ app.post('/add_degree_project', (req, res) => {
 
 	//TODO: logged in user instead of this:
 	var examiner_mail = "test_exam3@kth.se";
+
+	db.add_degree_project(req, res, examiner_mail, post_info);
 });
 
 //Gets view, creates main menu and sends it back to the user.
@@ -280,6 +282,7 @@ app.get('/images/kthexit.png', (req, res) => {
 app.get('/images/kth.png', (req, res) => {
 	res.sendFile('./images/kth.png', { root: __dirname });
 });
+
 
 
 
