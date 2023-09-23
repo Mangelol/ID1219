@@ -1,82 +1,8 @@
-<body onload="changeDisplay('q1'), changeDisplay('q2'), changeDisplay('q3'), changeDisplay('askForm')">
-	<div class="container">
-		
-		<div id="content">
+<div class="container">
+	<div id="content">
 		<h1>Help</h1>At this page you can get help if you have problems with the system.<p></p><b>Logging into the system</b><br />To be able to log into the system you need to have a valid KTH account. 
-    	If you have an account and you still can not log in, the problem is not in the KTH-EXIT system. 
-    	If that is the case, you need to contact KTH administration. </p>
+    If you have an account and you still can not log in, the problem is not in the KTH-EXIT system. 
+    If that is the case, you need to contact KTH administration. </p>
 
-		</div><!-- content -->
-		<div id = "faq">
-			<b>
-				Frequently asked questions (FAQ)
-			</b>
-		</div>
-		<div id="content">
-			<a href="javascript:changeDisplay('q1')">How do i log in to EXIT</a>
-		</div>
-		<div id="q1">
-			You log in to the system with your KTH account. If you are new to the system you need to be added first.</br>
-			The easiest way to log in is through the "Log in menu" via www.Exit.se
-		</div>
-		<div id = "content">
-			<a href="javascript:changeDisplay('q2')">I've forgotten my password, what should I do?</a>
-		</div>
-		<div id="q2">
-			In case you have forgotten your password, you need to visit KTH Entré to get a new one.</br>
-			Please note that you must provide an acceptable form of identification.
-		</div>
-		
-		<div id = "content">
-			<a href="javascript:changeDisplay('q3')">I have trouble adding budget year, what do i do?</a>
-		</div>
-		<div id="q3">
-			You can try to open the application in another browser if the problem still exist, please contact it-support@kth.se
-		</div>
-		
-		<div id ="content">
-			<a href="javascript:changeDisplay('askForm')"><b>Ask a question</b></a>
-	
-		</div>
-		
-			
-			<form  id = "askForm" name="askForm" onsubmit="return validateForm()">
-				<p>Fields with <font color="red">*</font> are required.</p>
-				Question <font color="red">*</font><br /><input id ="questions" type="text" name="question"></br>
-				Language <font color="red">*</font><br /><input type="text" name="lan"></br>
-				Firstname<br /><input type="text" name="fname"></br>
-				Lastname <br /><input type="text" name="lname"></br>
-				Email <font color="red">*</font><br /><input type="text" name="email"></br>
-		
-				<input type="submit" value="Submit">
-		  	</form>
-		
-		<script type = "text/javascript">
-				function changeDisplay(id){
-					var element = document.getElementById(id);
-					if(element.style.display=='none'){
-						element.style.display='block';
-					}
-					else {
-						element.style.display='none';
-					}
-				
-				}
-				function validateForm() {
-  					var q = document.forms["askForm"]["question"].value;
-					var l = document.forms["askForm"]["lan"].value;
-					var fname = document.forms["askForm"]["fname"].value;
-					var lname = document.forms["askForm"]["lname"].value;
-					var mail = document.forms["askForm"]["email"].value;
-  					if (q == "" || l =="" || mail == "") {
-    					alert("The fields marked with * can not be empty");
-    					return false;
-  					}
-					else{
-						alert("Your question has been sent");
-					}
-				}
-		</script>    
-
-	</div>
-	</body>
+	</div><!-- content -->
+</div>

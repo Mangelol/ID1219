@@ -258,6 +258,7 @@ app.post('/specify_tutoring_hours', (req, res) => {
 
 
 
+
 //Fixing get requests for css files and images
 app.get('/styles/form.css', (req, res) => {
 	res.sendFile('./styles/form.css', { root: __dirname });

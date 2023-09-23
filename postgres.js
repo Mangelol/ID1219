@@ -52,7 +52,7 @@ const get_all_examiners = (director_mail, callback) => {
 			throw err;
 		}
 		console.log('rows: ' + result.rows + '\tcommand: ' + result.command + '\trowCount: ' + result.rowCount);
-		callback(result);
+		callback(request);
 	})
 }
 
